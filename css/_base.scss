@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5%
+}
+
+//Color variable
+
+$color-primary: hsl(180, 66%, 49%);
+$color-primary-violet: hsl(257, 27%, 26%);
+
+$color-secondary: hsl(0, 87%, 67%);
+$color-neutral-g: hsl(0, 0%, 75%);
+$color-neutral-db: hsl(255, 11%, 22%);
+$color-neutral-dv: hsl(260, 8%, 14%);
+
+$font-primary: "Poppins", sans-serif;
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
