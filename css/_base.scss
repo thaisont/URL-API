@@ -19,7 +19,16 @@ $color-neutral-g: hsl(0, 0%, 75%);
 $color-neutral-db: hsl(255, 11%, 22%);
 $color-neutral-dv: hsl(260, 8%, 14%);
 
+// Font variable
 $font-primary: "Poppins", sans-serif;
+
+//Breakpoint
+$bp-xl-largest: 81.25em; //1440/16= 90
+$bp-largest: 75em; //1200/16 = 75 em;
+$bp-large: 68.75em; //1100/16 = 68.75
+$bp-medium: 56.25em; //900/16 = 56.25
+$bp-small: 37.5em; //600/16 = 37.5
+$bp-smallest: 31.25em; //500/16 = 23.43
 
 body {
   font-family: $font-primary;
