@@ -17,8 +17,17 @@ body {
   font-size: 1.8rem;
 }
 
+p {
+  color: #9e9aa7;
+  font-weight: 500;
+}
+
+.mid-section-bg {
+  background-color: #eff1f7;
+}
+
 .container {
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   max-width: 1440px;
   margin: 0 auto;
   display: -webkit-box;
@@ -39,17 +48,25 @@ body {
 
 .banner {
   position: relative;
-  left: 5%;
-  width: 130%;
+  width: 100%;
   padding: 1rem 0rem;
 }
 
 h1 {
   color: #35323e;
   font-size: 4rem;
+  padding-bottom: 1rem;
+  line-height: 50px;
 }
 
-.main-section {
+h2 {
+  color: #35323e;
+  padding-bottom: 1rem;
+  font-size: 30px;
+}
+
+.main-section,
+.mid-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,5 +74,104 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+.main-section-p,
+.mid-section-p {
+  padding: 0rem 5rem 2rem 5rem;
+}
+
+.main-section-search {
+  background: #3b3054;
+  padding: 3rem 2rem;
+  margin: 2rem;
+  border-style: none;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 0;
+  position: relative;
+}
+
+.main-section-btn {
+  margin-bottom: 5rem;
+}
+
+.mid-section {
+  padding-top: 10rem;
+}
+
+.mid-section-p {
+  line-height: 30px;
+}
+
+.background-style {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.api-search {
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.search-term,
+.api-search-btn {
+  border-style: none;
+  border-radius: 5px;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.api-search-btn {
+  font-weight: 700;
+  background: #2acfcf;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-term:focus {
+  outline: none;
+  border: 3px solid #f46262;
+}
+
+.search-term::-webkit-input-placeholder {
+  color: #bfbfbf;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.search-term:-ms-input-placeholder {
+  color: #bfbfbf;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.search-term::-ms-input-placeholder {
+  color: #bfbfbf;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.search-term::placeholder {
+  color: #bfbfbf;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.feature {
+  background: white;
 }
 /*# sourceMappingURL=style.css.map */

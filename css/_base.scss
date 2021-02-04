@@ -16,6 +16,7 @@ $color-primary-violet: hsl(257, 27%, 26%);
 
 $color-secondary: hsl(0, 87%, 67%);
 $color-neutral-g: hsl(0, 0%, 75%);
+$color-neutral-gv: hsl(257, 7%, 63%);
 $color-neutral-db: hsl(255, 11%, 22%);
 $color-neutral-dv: hsl(260, 8%, 14%);
 
@@ -34,4 +35,13 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   font-size: 1.8rem;
+}
+
+p {
+  color: $color-neutral-gv;
+  font-weight: 500;
+}
+
+.mid-section-bg {
+  background-color: #eff1f7;
 }
