@@ -67,19 +67,14 @@ h2 {
 
 .main-section,
 .mid-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
   text-align: center;
 }
 
 .main-section-p,
 .mid-section-p {
-  padding: 0rem 5rem 2rem 5rem;
+  padding: 0rem 5rem 0rem 5rem;
+  margin-bottom: 7rem;
 }
 
 .main-section-search {
@@ -87,7 +82,7 @@ h2 {
   padding: 3rem 2rem;
   margin: 2rem;
   border-style: none;
-  border-radius: 10px;
+  border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,10 +95,32 @@ h2 {
           align-items: center;
   z-index: 0;
   position: relative;
+  overflow: hidden;
+}
+
+.highlighted-text {
+  display: none;
+  color: #f46262;
+  font-size: 1.6rem;
+  font-style: italic;
+  padding: 1rem 0;
 }
 
 .main-section-btn {
   margin-bottom: 5rem;
+  background: #2acfcf;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  border-style: none;
+  border-radius: 30px;
+  padding: 1rem;
+  width: 50%;
+  cursor: pointer;
+}
+
+.main-section-btn:focus {
+  outline: none;
 }
 
 .mid-section {
@@ -123,7 +140,13 @@ h2 {
 
 .api-search {
   width: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  color: #bfbfbf;
+  font-size: 1.8rem;
 }
 
 .search-term,
@@ -143,8 +166,9 @@ h2 {
 }
 
 .search-term:focus {
-  outline: none;
-  border: 3px solid #f46262;
+  outline: #f46262 solid 2px;
+  outline-offset: -2px;
+  outline-width: 4px;
 }
 
 .search-term::-webkit-input-placeholder {
@@ -173,5 +197,32 @@ h2 {
 
 .feature {
   background: white;
+  text-align: center;
+  margin: 0 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.icon {
+  background-color: #3b3054;
+  position: absolute;
+  padding: 2rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: -13%;
+  right: 42%;
+}
+
+.feature-heading {
+  padding: 8rem 0 2rem 0;
+}
+
+.feature-p {
+  padding: 1rem 5rem 5rem 5rem;
 }
 /*# sourceMappingURL=style.css.map */
