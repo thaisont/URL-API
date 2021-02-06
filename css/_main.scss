@@ -74,6 +74,11 @@ h2 {
   &-p {
     line-height: 30px;
   }
+
+  &-bg {
+    background-color: #eff1f7;
+    padding-bottom: 8rem;
+  }
 }
 
 .background-style {
@@ -130,8 +135,7 @@ input {
   position: relative;
 
   &-content,
-  &-content-2,
-  &-content-3 {
+  &-content-2 {
     margin-bottom: 12rem;
   }
 }
@@ -153,4 +157,28 @@ input {
 
 .feature-p {
   padding: 1rem 5rem 5rem 5rem;
+}
+
+.bottom-banner {
+  background: $color-primary-violet;
+
+  &-header {
+    color: white;
+    text-align: center;
+  }
+}
+
+.bottom-banner {
+  position: relative;
+  height: 47vh;
+  overflow: hidden;
+  z-index: 1;
+  &-bg {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 47vh;
+    z-index: -1;
+  }
 }
