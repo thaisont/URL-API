@@ -40,7 +40,7 @@
   &-menu {
     position: relative;
     margin: 0 2rem;
-    display: none;
+    visibility: hidden;
   }
 
   &-background {
@@ -94,4 +94,8 @@
 .animate::after {
   top: 0rem;
   transform: rotate(-135deg);
+}
+
+.active {
+  visibility: visible;
 }

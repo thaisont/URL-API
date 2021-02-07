@@ -3,12 +3,12 @@
 }
 
 .image-section {
-  margin-right: -43%;
+  margin-right: -60%;
 }
 .banner {
   position: relative;
 
-  width: 100%;
+  width: 80%;
   padding: 1rem 2rem;
 }
 
@@ -43,7 +43,7 @@ h2 {
   text-align: center;
 
   &-p {
-    padding: 0rem 5rem 0rem 5rem;
+    padding: 0rem 1rem 0rem 1rem;
     margin-bottom: 4rem;
   }
 }
@@ -79,7 +79,7 @@ h2 {
   border-style: none;
   border-radius: 30px;
   padding: 1.5rem;
-  width: 44%;
+  width: 62%;
   cursor: pointer;
 
   &:focus {
@@ -168,8 +168,7 @@ input {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  top: -13%;
-  right: 40%;
+  margin-top: -5rem;
 }
 
 .feature-heading {
@@ -191,17 +190,17 @@ input {
 
 .bottom-banner {
   position: relative;
-  height: 35vh;
+  height: 100vh;
   overflow: hidden;
   z-index: 1;
-  padding: 11rem 0;
+  padding: 10rem 0;
 
   &-bg {
     width: 100%;
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 35vh;
+    height: 100vh;
     z-index: -1;
   }
 

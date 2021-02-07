@@ -73,7 +73,7 @@ p {
 .burger-menu {
   position: relative;
   margin: 0 2rem;
-  display: none;
+  visibility: hidden;
 }
 
 .burger-background {
@@ -129,9 +129,13 @@ p {
           transform: rotate(-135deg);
 }
 
+.active {
+  visibility: visible;
+}
+
 .vertical-line {
   border-left: 8px solid #2acfcf;
-  height: 900px;
+  height: 950px;
   position: absolute;
   z-index: 0;
   right: 50%;
@@ -218,12 +222,12 @@ footer {
 }
 
 .image-section {
-  margin-right: -43%;
+  margin-right: -60%;
 }
 
 .banner {
   position: relative;
-  width: 100%;
+  width: 80%;
   padding: 1rem 2rem;
 }
 
@@ -268,7 +272,7 @@ h2 {
 
 .main-section-p,
 .mid-section-p {
-  padding: 0rem 5rem 0rem 5rem;
+  padding: 0rem 1rem 0rem 1rem;
   margin-bottom: 4rem;
 }
 
@@ -309,7 +313,7 @@ h2 {
   border-style: none;
   border-radius: 30px;
   padding: 1.5rem;
-  width: 44%;
+  width: 62%;
   cursor: pointer;
 }
 
@@ -419,8 +423,7 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: -13%;
-  right: 40%;
+  margin-top: -5rem;
 }
 
 .feature-heading {
@@ -442,10 +445,10 @@ input {
 
 .bottom-banner {
   position: relative;
-  height: 35vh;
+  height: 100vh;
   overflow: hidden;
   z-index: 1;
-  padding: 11rem 0;
+  padding: 10rem 0;
 }
 
 .bottom-banner-bg {
@@ -453,7 +456,7 @@ input {
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 35vh;
+  height: 100vh;
   z-index: -1;
 }
 
