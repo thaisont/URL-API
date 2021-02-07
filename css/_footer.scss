@@ -1,0 +1,46 @@
+footer {
+  background: $color-neutral-dv;
+  text-align: center;
+}
+
+.footer-logo {
+  padding: 5rem;
+}
+
+.footer-section ul,
+.social-media ul {
+  list-style: none;
+}
+
+.footer-header {
+  color: #ffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: $color-neutral-g;
+}
+
+.footer-section ul li {
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.social-media {
+  justify-content: center;
+  display: flex;
+  padding: 4rem 0;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-media li {
+  padding: 0px 1rem;
+}

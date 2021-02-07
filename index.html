@@ -20,53 +20,50 @@
     <nav>
       <div class="container">
         <img src="./images/logo.svg" alt="Logo displaying Shortly" class="logo">
-        <i class="burger-icon fas fa-bars fa-lg"></i>
+
       </div>
 
-      <!-- <div class="burger-outside"></div>
-    <div class="burger-background">
-      <ul class="nav-list-mobile">
-        <a href="/">Features</a>
-        <a href="/">Features</a>
-        <a href="/">Pricing</a>
-        <a href="/">Resources</a>
-      </ul>
 
-    </div>
+      <div class="burger">
+        <div class="burger-icon"></div>
+      </div>
 
 
+      <div class="burger-menu">
+        <div class="burger-background">
 
-    Login
-    Sign Up -->
+          <ul class="nav-list-mobile">
+            <a href="/">Features</a>
+            <a href="/">Pricing</a>
+            <a href="/">Resources</a>
+            <hr class="mobile-seperator">
+            </hr>
+            <a href="/">Login</a>
+            <button class="sign-up-btn">Sign up</button>
+          </ul>
+
+        </div>
+      </div>
     </nav>
 
   </header>
   <main>
     <section>
-      <img src="./images/illustration-working.svg" alt="woman sitting on desk using a computer" class="banner">
+      <div class="home">
+        <div class="image-section">
+          <img src="./images/illustration-working.svg" alt="woman sitting on desk using a computer" class="banner">
+        </div>
+        <div class="container">
+          <div class="main-section">
+            <h1>More than just shorter links</h1>
 
-      <div class="container">
-        <div class="main-section">
-          <h1>More than just shorter links</h1>
+            <p class="main-section-p">Build your brand’s recognition and get detailed insights
+              on how your links are performing.</p>
 
-          <p class="main-section-p">Build your brand’s recognition and get detailed insights
-            on how your links are performing.</p>
+            <a href="/">
+              <button class="main-section-btn">
+                Get Started </button></a>
 
-          <a href="/">
-            <button class="main-section-btn">
-              Get Started </button></a>
-
-
-          <div class="main-section-search">
-
-
-            <img class="background-style" src="./images/bg-shorten-mobile.svg" alt="">
-            <form class="api-search">
-              <input class="search-term" type="text" placeholder=" Shorten a link here.." name="search" />
-              <div class="highlighted-text">Please add a link </div>
-            </form>
-
-            <button class="api-search-btn"> Shorten It!</button>
 
           </div>
         </div>
@@ -75,6 +72,17 @@
     </section>
 
     <section class="mid-section-bg">
+      <div class="main-section-container">
+        <div class="main-section-search">
+          <img class="background-style" src="./images/bg-shorten-mobile.svg" alt="">
+          <form class="api-search">
+            <input class="search-term" type="text" placeholder=" Shorten a link here.." name="search" />
+            <div class="highlighted-text">Please add a link </div>
+          </form>
+
+          <button class="api-search-btn"> Shorten It!</button>
+        </div>
+      </div>
 
       <div class="container">
         <div class="mid-section">
@@ -146,32 +154,62 @@
 
 
   <footer>
-    Features
+    <img class="footer-logo" src="./images/footer-logo.svg" alt="">
+    <div class="footer-section">
+      <h3 class="footer-header">
+        Features
+      </h3>
+      <ul>
+        <li> <a href="/">
+            Link Shortening</a></li>
+        <li> <a href="/">
+            Features</a></li>
+        <li> <a href="/">
+            Branded Links</a></li>
+        <li> <a href="/">
+            Analytics</a> </li>
+      </ul>
+    </div>
 
-    Link Shortening
-    Branded Links
-    Analytics
+    <div class="footer-section">
+      <h3 class="footer-header">
+        Resources
+      </h3>
+      <ul>
+        <li> <a href="/">
+            Blog</a></li>
+        <li> <a href="/">
+            Developers</a></li>
+        <li> <a href="/">
+            Support</a></li>
+      </ul>
+    </div>
 
-    Resources
+    <div class="footer-section">
+      <h3 class="footer-header">
+        Company
+      </h3>
+      <ul>
+        <li> <a href="/">
+            About</a></li>
+        <li> <a href="/">
+            Our Team</a></li>
+        <li> <a href="/">
+            Careers</a></li>
+        <li> <a href="/">
+            Contact</a></li>
+      </ul>
+    </div>
 
-    Blog
-    Developers
-    Support
-
-    Company
-
-    About
-    Our Team
-    Careers
-    Contact
-
-
+    <div class="social-media">
+      <ul>
+        <li><img src="./images/icon-facebook.svg" alt=""></li>
+        <li><img src="./images/icon-twitter.svg" alt=""></li>
+        <li><img src="./images/icon-pinterest.svg" alt=""></li>
+        <li><img src="./images/icon-instagram.svg" alt=""></li>
+      </ul>
+    </div>
   </footer>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>

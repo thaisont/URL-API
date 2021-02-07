@@ -1,0 +1,97 @@
+.nav-list-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.nav-list-mobile a {
+  color: white;
+  text-decoration: none;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+
+.sign-up-btn {
+  background: $color-primary;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 30px;
+  border-style: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.mobile-seperator {
+  width: 100%;
+  border-style: none;
+  border-bottom: 1px solid $color-neutral-g;
+}
+.burger {
+  background: transparent;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  padding: 1rem 1.3rem 1.3rem 1.7rem;
+  cursor: pointer;
+
+  &-menu {
+    position: relative;
+    margin: 0 2rem;
+    display: none;
+  }
+
+  &-background {
+    background: $color-primary-violet;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+  }
+}
+
+.burger-icon {
+  position: absolute;
+  right: 0rem;
+  top: 1rem;
+  &,
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 3px;
+    background-color: $color-neutral-g;
+    display: inline-block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -0.8rem;
+  }
+
+  &::after {
+    top: 0.8rem;
+  }
+}
+
+.animate {
+  background-color: transparent;
+}
+
+.animate::before {
+  top: 0rem;
+  transform: rotate(135deg);
+}
+
+.animate::after {
+  top: 0rem;
+  transform: rotate(-135deg);
+}
