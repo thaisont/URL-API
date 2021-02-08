@@ -134,11 +134,11 @@ p {
 }
 
 .vertical-line {
-  border-left: 8px solid #2acfcf;
+  border-left: 9px solid #2acfcf;
   height: 950px;
   position: absolute;
   z-index: 0;
-  right: 50%;
+  right: 49%;
 }
 
 footer {
@@ -413,17 +413,20 @@ input {
 }
 
 .icon {
-  background-color: #3b3054;
-  position: absolute;
-  padding: 2.5rem;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -5rem;
+}
+
+.icon-bg {
+  position: absolute;
+  background: #3b3054;
+  border-radius: 50%;
+  padding: 2rem;
+  top: -5rem;
 }
 
 .feature-heading {
@@ -445,7 +448,7 @@ input {
 
 .bottom-banner {
   position: relative;
-  height: 100vh;
+  height: 50vh;
   overflow: hidden;
   z-index: 1;
   padding: 10rem 0;
@@ -456,7 +459,7 @@ input {
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 100vh;
+  height: 50vh;
   z-index: -1;
 }
 
