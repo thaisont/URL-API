@@ -5,3 +5,29 @@
   z-index: 0;
   right: 49%;
 }
+
+.link-copy {
+  font-weight: 700;
+  background: $color-primary;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  border-style: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.link {
+  padding-bottom: 1rem;
+}
+
+.link-shortended {
+  color: $color-primary;
+  padding: 1rem 0;
+}
+
+.main-section-result-line {
+  border-bottom: solid 1px $color-neutral-gv;
+  width: 1000%;
+}
