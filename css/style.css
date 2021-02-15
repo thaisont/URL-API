@@ -151,15 +151,23 @@ p {
   border-style: none;
   padding: 1rem;
   border-radius: 5px;
+  outline: none;
 }
 
-.link {
+#link {
   padding-bottom: 1rem;
+  color: #2acfcf;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-style: none;
+  outline: none;
 }
 
-.link-shortended {
+#short {
   color: #2acfcf;
   padding: 1rem 0;
+  outline: none;
+  border-style: none;
 }
 
 .main-section-result-line {
