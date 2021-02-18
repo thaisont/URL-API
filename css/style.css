@@ -538,14 +538,4 @@ input {
 .bottom-banner-header {
   padding-bottom: 2rem;
 }
-
-/* Show green borders when valid */
-input[data-state="valid"] {
-  border-color: #1fe01f;
-}
-
-/* Show red borders when filled, but invalid */
-input[data-state="invalid"] {
-  border-color: #e01f1f;
-}
 /*# sourceMappingURL=style.css.map */

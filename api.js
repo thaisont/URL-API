@@ -14,15 +14,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // Click event for "shorten it!" button
   apiSearchBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    // This gives you the value from the input
-    console.log(searchInput.value, "searchInput.value");
-    // Combine string of the API Url + Searchinput value
-    let newUrl = `${apiUrl}${searchInput.value}`;
 
-    // section appears
+    // blank value input
+    if (searchInput.value === "") {
+      document.querySelector(".highlighted-text").style.display = "block";
+    } else {
+      document.querySelector(".highlighted-text").style.display = "none";
+      // This gives you the value from the input
+      console.log(searchInput.value, "searchInput.value");
+      // Combine string of the API Url + Searchinput value
+      let newUrl = `${apiUrl}${searchInput.value}`;
 
-    // Pass it over to your function
-    getUrl(newUrl);
+      // section appears
+
+      // Pass it over to your function
+      getUrl(newUrl);
+    }
   });
 
   async function getUrl(urlString) {
