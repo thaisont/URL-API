@@ -8,9 +8,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const searchInput = document.getElementById("search-placeholder");
   console.log(apiSearchBtn, "apiSearchBtn");
 
+  const apiUrl = "https://api.shrtco.de/v2/shorten?url=";
+
   apiSearchBtn.addEventListener("click", (e) => {
     console.log(searchInput.value, "searchInput");
-    getUrl(searchInput.value);
+    // getUrl(searchInput.value);
+    let newUrl = `${apiUrl}${searchInput.value}`;
+    console.log(newUrl);
+    getUrl(newUrl);
   });
 
   async function getUrl(urlString) {
