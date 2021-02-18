@@ -8,13 +8,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const searchInput = document.getElementById("search-placeholder");
   console.log(apiSearchBtn, "apiSearchBtn");
 
+  // This is the API URL
   const apiUrl = "https://api.shrtco.de/v2/shorten?url=";
 
+  // Click event for "shorten it!" button
   apiSearchBtn.addEventListener("click", (e) => {
-    console.log(searchInput.value, "searchInput");
-    // getUrl(searchInput.value);
+    // This gives you the value from the input
+    console.log(searchInput.value, "searchInput.value");
+    // Combine string of the API Url + Searchinput value
     let newUrl = `${apiUrl}${searchInput.value}`;
-    console.log(newUrl);
+    // Pass it over to your function
     getUrl(newUrl);
   });
 
