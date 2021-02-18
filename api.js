@@ -4,8 +4,24 @@ const result = document.querySelector(".main-section-result");
 const shortLink = document.getElementById("short");
 const link = document.getElementById("link");
 const copyBtn = document.querySelector(".link-copy");
+const searchBtn = document.querySelector(".api-search-btn");
+const inputSearch = document.querySelector(".search-term");
+const higlightedText = document.querySelector(".highlighted-text");
 
-const apiUrl =
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (inputSearch.value === "") {
+    console.log("BLANK");
+    inputSearch.classList.add("focus");
+
+    higlightedText.classList.add("show");
+  } else {
+    inputSearch.classList.remove("focus");
+    higlightedText.classList.remove("show");
+  }
+});
+
+let apiUrl =
   "https://api.shrtco.de/v2/shorten?url=https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G";
 
 async function getUrl() {
