@@ -66,11 +66,11 @@ h2 {
 .main-section-result {
   background: white;
   padding: 2rem 2rem;
-
   border-style: none;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  display: none;
 }
 
 .highlighted-text {

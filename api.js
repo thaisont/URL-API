@@ -1,55 +1,58 @@
 // API shortner
+document.addEventListener("DOMContentLoaded", function (event) {
+  const result = document.querySelector(".main-section-result");
+  const shortLink = document.getElementById("short");
+  const link = document.getElementById("link");
+  const copyBtn = document.querySelector(".link-copy");
+  const apiSearchBtn = document.getElementById("api-search-btn");
+  const searchInput = document.getElementById("search-placeholder");
+  const mainSection = document.querySelector(".main-section-result");
 
-const result = document.querySelector(".main-section-result");
-const shortLink = document.getElementById("short");
-const link = document.getElementById("link");
-const copyBtn = document.querySelector(".link-copy");
-const searchBtn = document.querySelector(".api-search-btn");
-const inputSearch = document.querySelector(".search-term");
-const higlightedText = document.querySelector(".highlighted-text");
+  // This is the API URL
+  const apiUrl = "https://api.shrtco.de/v2/shorten?url=";
 
-searchBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (inputSearch.value === "") {
-    console.log("BLANK");
-    inputSearch.classList.add("focus");
+  // Click event for "shorten it!" button
+  apiSearchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    // This gives you the value from the input
+    console.log(searchInput.value, "searchInput.value");
+    // Combine string of the API Url + Searchinput value
+    let newUrl = `${apiUrl}${searchInput.value}`;
 
-    higlightedText.classList.add("show");
-  } else {
-    inputSearch.classList.remove("focus");
-    higlightedText.classList.remove("show");
+    // section appears
+
+    // Pass it over to your function
+    getUrl(newUrl);
+  });
+
+  async function getUrl(urlString) {
+    const response = await fetch(urlString);
+    const data = await response.json();
+    console.log(data);
+
+    const shortUrl = data.result.short_link;
+    const fullUrl = data.result.original_link;
+
+    console.log(shortUrl);
+    console.log(fullUrl);
+
+    link.value = fullUrl;
+    shortLink.value = shortUrl;
+    mainSection.style.display = "block";
   }
-});
+  // getUrl();
 
-let apiUrl =
-  "https://api.shrtco.de/v2/shorten?url=https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G";
+  copyBtn.addEventListener("click", (e) => {
+    /* Get the text field */
+    const copyText = document.getElementById("short");
 
-async function getUrl() {
-  const response = await fetch(apiUrl);
-  const data = await response.json();
-  console.log(data);
+    /* Select the text field */
+    copyText.select("short");
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-  const shortUrl = data.result.short_link;
-  const fullUrl = data.result.original_link;
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
 
-  console.log(shortUrl);
-  console.log(fullUrl);
-
-  link.value = fullUrl;
-  shortLink.value = shortUrl;
-}
-getUrl();
-
-copyBtn.addEventListener("click", (e) => {
-  /* Get the text field */
-  const copyText = document.getElementById("short");
-
-  /* Select the text field */
-  copyText.select("short");
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
-
-  console.log("text copied");
+    console.log("text copied");
+  });
 });
