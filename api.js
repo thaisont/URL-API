@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const copyBtn = document.querySelector(".link-copy");
   const apiSearchBtn = document.getElementById("api-search-btn");
   const searchInput = document.getElementById("search-placeholder");
-  const mainSection = document.querySelector(".main-section-result");
+
+  // list of results
 
   // This is the API URL
   const apiUrl = "https://api.shrtco.de/v2/shorten?url=";
@@ -18,8 +19,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // blank value input
     if (searchInput.value === "") {
       document.querySelector(".highlighted-text").style.display = "block";
+      searchInput.classList.add("focus");
     } else {
       document.querySelector(".highlighted-text").style.display = "none";
+      searchInput.classList.remove("focus");
       // This gives you the value from the input
       console.log(searchInput.value, "searchInput.value");
       // Combine string of the API Url + Searchinput value
@@ -45,8 +48,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     link.value = fullUrl;
     shortLink.value = shortUrl;
-    mainSection.style.display = "block";
+    result.style.display = "block";
   }
+
   // getUrl();
 
   copyBtn.addEventListener("click", (e) => {
@@ -56,6 +60,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     /* Select the text field */
     copyText.select("short");
     copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    copyBtn.innerHTML = "Copied!";
+    copyBtn.classList.add("copied");
 
     /* Copy the text inside the text field */
     document.execCommand("copy");

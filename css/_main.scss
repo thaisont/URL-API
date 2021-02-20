@@ -159,6 +159,10 @@ input {
   outline-width: 4px;
 }
 
+.copied {
+  background: $color-primary-violet !important;
+}
+
 .search-term::placeholder {
   font-family: $font-primary;
 
