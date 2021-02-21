@@ -36,6 +36,11 @@
   right: 3rem;
   padding: 1rem 1.3rem 1.3rem 1.7rem;
   cursor: pointer;
+  visibility: visible;
+
+  @media only screen and (min-width: $bp-medium) {
+    visibility: hidden;
+  }
 
   &-menu {
     position: relative;
@@ -98,4 +103,7 @@
 
 .active {
   visibility: visible;
+  @media only screen and (min-width: $bp-medium) {
+    visibility: hidden;
+  }
 }

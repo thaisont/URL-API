@@ -12,15 +12,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <title>Shortly URL shortening API</title>
 </head>
 
 <body>
   <header>
     <nav>
       <div class="container">
+
         <img src="./images/logo.svg" alt="Logo displaying Shortly" class="logo">
 
+        <div class="nav-list">
+          <div class="nav-list-items">
+            <div class="nav-links"><a href="/">Features</a></div>
+
+            <div class="nav-links"> <a href="/">Pricing</a></div>
+            <div class="nav-links"><a href="/">Resources</a></div>
+          </div>
+        </div>
+
+        <div class="nav-list-right">
+          <div class="nav-links"><a href="/">Login</a></div>
+
+          <button class="sign-up">Sign up</button>
+
+        </div>
+      </div>
       </div>
 
 
@@ -50,19 +67,21 @@
   <main>
     <section>
       <div class="home">
-        <div class="image-section">
-          <img src="./images/illustration-working.svg" alt="woman sitting on desk using a computer" class="banner">
-        </div>
-        <div class="container">
-          <div class="main-section">
-            <h1>More than just shorter links</h1>
+        <div class="section-top">
+          <div class="container">
+            <div class="main-section">
+              <h1>More than just shorter links</h1>
 
-            <p class="main-section-p">Build your brand’s recognition and get detailed insights
-              on how your links are performing.</p>
+              <p class="main-section-p">Build your brand’s recognition and get detailed insights
+                on how your links are performing.</p>
 
-            <a href="/">
-              <button class="main-section-btn">
-                Get Started </button></a>
+              <a href="/">
+                <button class="main-section-btn">
+                  Get Started </button></a>
+            </div>
+            <div class="image-section">
+              <img src="./images/illustration-working.svg" alt="woman sitting on desk using a computer" class="banner">
+            </div>
 
 
           </div>
@@ -224,10 +243,18 @@
 
     <div class="social-media">
       <ul>
-        <li><img src="./images/icon-facebook.svg" alt=""></li>
-        <li><img src="./images/icon-twitter.svg" alt=""></li>
-        <li><img src="./images/icon-pinterest.svg" alt=""></li>
-        <li><img src="./images/icon-instagram.svg" alt=""></li>
+        <a href="/">
+          <li><img src="./images/icon-facebook.svg" alt=""></li>
+        </a>
+        <a href="">
+          <li><img src="./images/icon-twitter.svg" alt=""></li>
+        </a>
+        <a href="">
+          <li><img src="./images/icon-pinterest.svg" alt=""></li>
+        </a>
+        <a href="">
+          <li><img src="./images/icon-instagram.svg" alt=""></li>
+        </a>
       </ul>
     </div>
   </footer>

@@ -68,6 +68,13 @@ p {
   right: 3rem;
   padding: 1rem 1.3rem 1.3rem 1.7rem;
   cursor: pointer;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .burger {
+    visibility: hidden;
+  }
 }
 
 .burger-menu {
@@ -131,6 +138,12 @@ p {
 
 .active {
   visibility: visible;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .active {
+    visibility: hidden;
+  }
 }
 
 .vertical-line {
@@ -242,12 +255,91 @@ footer {
           align-items: center;
 }
 
+@media only screen and (min-width: 56.25em) {
+  .container {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
 .burger-icon {
   color: #bfbfbf;
 }
 
 .logo {
+  margin-right: 2rem;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: auto;
+}
+
+.nav-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.nav-list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  list-style: none;
+  color: #9e9aa7;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.sign-up {
+  background: #2acfcf;
+  width: 100%;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  border-style: none;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  opacity: 50%;
+}
+
+.sign-up:focus {
+  outline: none;
+}
+
+.section-top {
+  display: block;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .section-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 20rem;
+  }
 }
 
 .home {
@@ -256,6 +348,18 @@ footer {
 
 .image-section {
   margin-right: -60%;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .image-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .banner {
@@ -279,10 +383,30 @@ h2 {
 
 .main-section {
   padding-bottom: 10rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .main-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+}
+
+.main-section-p {
+  padding: 0rem 1rem 0rem 1rem;
+  margin-bottom: 4rem;
 }
 
 .main-section-container {
-  margin: 0 4rem;
+  margin: 0 2rem;
+  max-width: 1440px;
   position: relative;
   bottom: 10rem;
   display: -webkit-box;
@@ -298,13 +422,11 @@ h2 {
   overflow: hidden;
 }
 
-.main-section,
 .mid-section {
   display: block;
   text-align: center;
 }
 
-.main-section-p,
 .mid-section-p {
   padding: 0rem 1rem 0rem 1rem;
   margin-bottom: 4rem;
@@ -367,8 +489,12 @@ h2 {
   border-style: none;
   border-radius: 30px;
   padding: 1.5rem;
-  width: 62%;
+  width: 54%;
   cursor: pointer;
+}
+
+.main-section-btn:active {
+  opacity: 50%;
 }
 
 .main-section-btn:focus {
@@ -429,6 +555,10 @@ input {
   cursor: pointer;
   font-size: 18px;
   margin-top: 2rem;
+}
+
+.api-search-btn:active {
+  opacity: 50%;
 }
 
 .focus {
@@ -492,6 +622,9 @@ input {
   border-radius: 50%;
   padding: 2rem;
   top: -5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .feature-heading {
@@ -513,10 +646,10 @@ input {
 
 .bottom-banner {
   position: relative;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
   z-index: 1;
-  padding: 10rem 0;
+  padding: 12rem 0;
 }
 
 .bottom-banner-bg {
@@ -524,7 +657,7 @@ input {
   position: absolute;
   top: 0px;
   right: 0px;
-  height: 50vh;
+  height: 43vh;
   z-index: -1;
 }
 

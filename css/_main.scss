@@ -4,6 +4,11 @@
 
 .image-section {
   margin-right: -60%;
+  @media only screen and (min-width: $bp-small) {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 .banner {
   position: relative;
@@ -27,9 +32,22 @@ h2 {
 
 .main-section {
   padding-bottom: 10rem;
+  text-align: center;
+
+  @media only screen and (min-width: $bp-medium) {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &-p {
+    padding: 0rem 1rem 0rem 1rem;
+    margin-bottom: 4rem;
+  }
 
   &-container {
-    margin: 0 4rem;
+    margin: 0 2rem;
+    max-width: 1440px;
     position: relative;
     bottom: 10rem;
     display: flex;
@@ -38,7 +56,7 @@ h2 {
     overflow: hidden;
   }
 }
-.main-section,
+
 .mid-section {
   display: block;
   text-align: center;
@@ -94,8 +112,12 @@ h2 {
   border-style: none;
   border-radius: 30px;
   padding: 1.5rem;
-  width: 62%;
+  width: 54%;
   cursor: pointer;
+
+  &:active {
+    opacity: 50%;
+  }
 
   &:focus {
     outline: none;
@@ -151,6 +173,10 @@ input {
   cursor: pointer;
   font-size: 18px;
   margin-top: 2rem;
+
+  &:active {
+    opacity: 50%;
+  }
 }
 
 .focus {
@@ -202,6 +228,7 @@ input {
     border-radius: 50%;
     padding: 2rem;
     top: -5rem;
+    display: flex;
   }
 }
 
@@ -224,17 +251,17 @@ input {
 
 .bottom-banner {
   position: relative;
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
   z-index: 1;
-  padding: 10rem 0;
+  padding: 12rem 0;
 
   &-bg {
     width: 100%;
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 50vh;
+    height: 43vh;
     z-index: -1;
   }
 
