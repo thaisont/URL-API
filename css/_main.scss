@@ -12,9 +12,20 @@
 }
 .banner {
   position: relative;
-
+  margin-bottom: 2rem;
   width: 80%;
   padding: 1rem 2rem;
+  @media only screen and (min-width: $bp-medium) {
+    width: 100%;
+    left: 12%;
+    top: -6rem;
+  }
+
+  @media only screen and (min-width: $bp-large) {
+    width: 100%;
+    left: 12%;
+    top: -2rem;
+  }
 }
 
 h1 {
@@ -33,15 +44,16 @@ h2 {
 .main-section {
   padding-bottom: 10rem;
   text-align: center;
+  order: 1;
 
   @media only screen and (min-width: $bp-medium) {
     display: flex;
     flex-direction: column;
     text-align: left;
+    order: 0;
   }
 
   &-p {
-    padding: 0rem 1rem 0rem 1rem;
     margin-bottom: 4rem;
   }
 
@@ -127,6 +139,7 @@ h2 {
 .mid-section {
   margin-top: -2rem;
   margin-bottom: 4rem;
+  width: 100%;
 
   &-p {
     line-height: 30px;
@@ -254,7 +267,7 @@ input {
   height: 40vh;
   overflow: hidden;
   z-index: 1;
-  padding: 12rem 0;
+  padding: 8rem 0;
 
   &-bg {
     width: 100%;
@@ -273,5 +286,27 @@ input {
 
   &-header {
     padding-bottom: 2rem;
+  }
+}
+
+.section-container {
+  padding: 2rem 2rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: $bp-medium) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.feature-container {
+  display: block;
+
+  @media only screen and (min-width: $bp-medium) {
+    display: flex;
+    flex-direction: row;
   }
 }
