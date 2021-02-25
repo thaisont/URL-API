@@ -33,6 +33,11 @@ h1 {
   font-size: 4rem;
   padding-bottom: 1rem;
   line-height: 50px;
+
+  @media only screen and (min-width: $bp-large) {
+    font-size: 6rem;
+    line-height: 70px;
+  }
 }
 
 h2 {
@@ -66,6 +71,11 @@ h2 {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+
+    @media only screen and (min-width: $bp-largest) {
+      left: 50%;
+      transform: translateX(-51%);
+    }
   }
 }
 
@@ -212,16 +222,46 @@ input {
   color: $color-secondary;
 }
 
-.feature {
+.feature,
+.feature-2,
+.feature-3 {
   background: white;
   text-align: center;
-  margin: 0 3rem;
   border-radius: 10px;
   position: relative;
 
+  @media only screen and (min-width: $bp-large) {
+    text-align: left;
+  }
+
   &-content,
-  &-content-2 {
+  &-content-2,
+  &-content-3 {
     margin-bottom: 12rem;
+
+    @media only screen and (min-width: $bp-large) {
+      margin-bottom: 0;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.feature {
+  @media only screen and (min-width: $bp-large) {
+    margin-bottom: 8rem;
+  }
+}
+
+.feature-2 {
+  @media only screen and (min-width: $bp-large) {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.feature-3 {
+  @media only screen and (min-width: $bp-large) {
+    margin-top: 10rem;
   }
 }
 
@@ -235,6 +275,11 @@ input {
   display: flex;
   justify-content: center;
 
+  @media only screen and (min-width: $bp-large) {
+    margin-left: 3rem;
+    justify-content: start;
+  }
+
   &-bg {
     position: absolute;
     background: $color-primary-violet;
@@ -247,10 +292,18 @@ input {
 
 .feature-heading {
   padding: 8rem 0 2rem 0;
+
+  @media only screen and (min-width: $bp-large) {
+    padding: 6rem 0 2rem 0;
+  }
 }
 
 .feature-p {
   padding: 1rem 5rem 5rem 5rem;
+
+  @media only screen and (min-width: $bp-large) {
+    padding: 0;
+  }
 }
 
 .bottom-banner {
@@ -304,9 +357,8 @@ input {
 }
 .feature-container {
   display: block;
-
-  @media only screen and (min-width: $bp-medium) {
+  @media only screen and (min-width: $bp-large) {
     display: flex;
-    flex-direction: row;
+    column-gap: 4rem;
   }
 }
