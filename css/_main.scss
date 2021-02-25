@@ -43,7 +43,7 @@ h1 {
 h2 {
   color: $color-neutral-db;
   padding-bottom: 1rem;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .main-section {
@@ -133,8 +133,8 @@ h2 {
   font-size: 2rem;
   border-style: none;
   border-radius: 30px;
-  padding: 1.5rem;
-  width: 54%;
+  padding: 1.5rem 8rem;
+
   cursor: pointer;
 
   &:active {
@@ -157,8 +157,12 @@ h2 {
 
   &-bg {
     background-color: #eff1f7;
-    padding-bottom: 8rem;
+
     position: relative;
+
+    @media only screen and (min-width: $bp-large) {
+      padding-bottom: 8rem;
+    }
   }
 }
 
@@ -320,7 +324,7 @@ input {
   height: 40vh;
   overflow: hidden;
   z-index: 1;
-  padding: 8rem 0;
+  padding: 13rem 0;
 
   &-bg {
     width: 100%;
@@ -329,6 +333,24 @@ input {
     right: 0px;
     height: 43vh;
     z-index: -1;
+
+    @media only screen and (min-width: $bp-large) {
+      visibility: hidden;
+    }
+
+    &-desktop {
+      display: none;
+
+      @media only screen and (min-width: $bp-large) {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 40vh;
+        z-index: -1;
+      }
+    }
   }
 
   &-text {

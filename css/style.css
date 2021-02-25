@@ -64,10 +64,12 @@ p {
 .burger {
   background: transparent;
   position: absolute;
+  top: 3rem;
   right: 3rem;
   padding: 1rem 1.3rem 1.3rem 1.7rem;
   cursor: pointer;
   visibility: visible;
+  border: none;
 }
 
 @media only screen and (min-width: 56.25em) {
@@ -204,6 +206,13 @@ footer {
   padding: 5rem;
 }
 
+@media only screen and (min-width: 68.75em) {
+  .footer-logo {
+    padding: 0;
+    padding-right: 20rem;
+  }
+}
+
 .footer-section ul,
 .social-media ul {
   list-style: none;
@@ -214,6 +223,20 @@ footer {
   font-size: 18px;
   font-weight: 500;
   padding: 2rem 0;
+}
+
+@media only screen and (min-width: 68.75em) {
+  .footer-header {
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (min-width: 68.75em) {
+  .footer-section {
+    text-align: left;
+    padding-right: 10rem;
+  }
 }
 
 .footer-section ul li a {
@@ -237,6 +260,12 @@ footer {
   padding: 4rem 0;
 }
 
+@media only screen and (min-width: 68.75em) {
+  .social-media {
+    padding: 0;
+  }
+}
+
 .social-media ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,10 +274,28 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-media li {
   padding: 0px 1rem;
+}
+
+@media only screen and (min-width: 68.75em) {
+  .footer-container {
+    padding: 6rem 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow: hidden;
+  }
 }
 
 nav {
@@ -428,7 +475,7 @@ h1 {
 h2 {
   color: #35323e;
   padding-bottom: 1rem;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .main-section {
@@ -551,8 +598,7 @@ h2 {
   font-size: 2rem;
   border-style: none;
   border-radius: 30px;
-  padding: 1.5rem;
-  width: 54%;
+  padding: 1.5rem 8rem;
   cursor: pointer;
 }
 
@@ -576,8 +622,13 @@ h2 {
 
 .mid-section-bg {
   background-color: #eff1f7;
-  padding-bottom: 8rem;
   position: relative;
+}
+
+@media only screen and (min-width: 68.75em) {
+  .mid-section-bg {
+    padding-bottom: 8rem;
+  }
 }
 
 .background-style {
@@ -781,7 +832,7 @@ input {
   height: 40vh;
   overflow: hidden;
   z-index: 1;
-  padding: 8rem 0;
+  padding: 13rem 0;
 }
 
 .bottom-banner-bg {
@@ -791,6 +842,28 @@ input {
   right: 0px;
   height: 43vh;
   z-index: -1;
+}
+
+@media only screen and (min-width: 68.75em) {
+  .bottom-banner-bg {
+    visibility: hidden;
+  }
+}
+
+.bottom-banner-bg-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 68.75em) {
+  .bottom-banner-bg-desktop {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 40vh;
+    z-index: -1;
+  }
 }
 
 .bottom-banner-text {
