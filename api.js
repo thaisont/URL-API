@@ -8,9 +8,6 @@ const apiSearchBtn = document.getElementById("api-search-btn");
 const searchInput = document.getElementById("search-placeholder");
 const form = document.querySelector(".api-search");
 
-// list of results
-let listResults = [];
-
 // This is the API URL
 const apiUrl = "https://api.shrtco.de/v2/shorten?url=";
 

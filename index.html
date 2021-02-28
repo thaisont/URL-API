@@ -19,6 +19,7 @@
   <header>
     <nav>
       <div class="container">
+
         <a href="/">
           <img src="./images/logo.svg" alt="Logo displaying Shortly" class="logo">
         </a>
@@ -35,12 +36,12 @@
         <div class="nav-list-right">
           <div class="nav-links"><a href="/">Login</a></div>
           <a href="">
-            <button class="sign-up">Sign up</button>
+            <button class="sign-up">Sign up </button>
           </a>
 
 
 
-          <button class="burger">
+          <button aria-label="burger icon" class="burger">
             <div class="burger-icon"></div>
           </button>
 
@@ -103,10 +104,12 @@
         <div class="main-section-search">
           <img class="background-style" src="./images/bg-shorten-mobile.svg" alt="">
           <form class="api-search">
-            <input class="search-term" id="search-placeholder" type="url" placeholder="Shorten a link here.."
-              name="search" required />
-            <div class="highlighted-text">Please add a link </div>
-            <button id="api-search-btn" class="api-search-btn"> Shorten It!</button>
+            <label id="searchLabel" for="search-placeholder">
+              <input class="search-term" id="search-placeholder" type="url" placeholder="Shorten a link here.."
+                name="search" required />
+              <div class="highlighted-text">Please add a link </div>
+              <span></span>
+              <button id="api-search-btn" class="api-search-btn"> Shorten It!</button>
 
           </form>
 

@@ -40,7 +40,7 @@
   border: none;
 
   @media only screen and (min-width: $bp-medium) {
-    visibility: hidden;
+    display: none;
   }
 
   &-menu {
