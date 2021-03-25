@@ -321,7 +321,7 @@ input {
 
 .bottom-banner {
   position: relative;
-  height: 40vh;
+  height: 50vh;
   overflow: hidden;
   z-index: 1;
   padding: 13rem 0;
@@ -331,7 +331,7 @@ input {
     position: absolute;
     top: 0px;
     right: 0px;
-    height: 43vh;
+    height: 50vh;
     z-index: -1;
 
     @media only screen and (min-width: $bp-large) {
@@ -347,7 +347,7 @@ input {
         position: absolute;
         top: 0px;
         right: 0px;
-        height: 40vh;
+        height: 50vh;
         z-index: -1;
       }
     }
@@ -360,7 +360,7 @@ input {
   }
 
   &-header {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 }
 
